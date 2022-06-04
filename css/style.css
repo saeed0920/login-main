@@ -1,0 +1,67 @@
+@charset "UTF-8";
+@keyframes moveContainer {
+  0% {
+    transform: translatex(5rem);
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    transform: translatex(0); } }
+
+/*
+
+0px - 600px       = phone only
+
+600px  - 900px    = tablet portrait
+
+900px  - 1200px   = tablet landscape
+
+[1200px  - 1800px]  = Desktop normaly style apply 
+
+1800px -  ∞ px    = Big Desktop 
+/////////////////////////////////////////////////////// 
+
+phone 
+
+tab-small
+
+tab-big 
+
+big-desktop
+*/
+/* animation */
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+  padding: 0; }
+
+@font-face {
+  src: url(../fonts/B_Yekan/Yekan.ttf);
+  font-family: font-main; }
+
+@font-face {
+  src: url(../fonts/Far_Nazanin/Far_Nazanin.ttf);
+  font-family: font-header; }
+
+@font-face {
+  src: url(../fonts/Far_Diplomat/Far_Diplomat.ttf);
+  font-family: font-text; }
+
+@font-face {
+  src: url(../fonts/IranNastaliq/IranNastaliq.ttf);
+  font-family: font-nastaliq; }
+
+@font-face {
+  src: url(../fonts/Suls-mir-emad/Suls.ttf);
+  font-family: font-nastaliq-2; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: sans-serif;
+  direction: rtl; }
+
+/* uniti css */
