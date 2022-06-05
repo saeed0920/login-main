@@ -44,7 +44,6 @@ big-desktop
 
 .footer {
   background-color: rgba(31, 162, 255, 0.6);
-  height: 2rem;
   text-align: center;
   place-self: flex-end stretch;
   color: #ffffff;
@@ -133,6 +132,19 @@ big-desktop
     .container-login__btn:active {
       box-shadow: 0 0.2rem 0.3rem rgba(0, 0, 0, 0.4);
       transform: translateY(-1px); }
+  .container-login-robot {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%; }
+    .container-login-robot input {
+      padding: 1rem;
+      height: 5.2rem;
+      width: 18rem; }
+    .container-login-robot img {
+      background-size: cover;
+      width: 8rem;
+      height: 5rem; }
 
 *,
 *::after,
@@ -179,9 +191,12 @@ body {
   display: grid;
   min-height: 100vh;
   background-size: cover;
-  direction: rtl; }
+  background-repeat: no-repeat;
+  direction: rtl;
+  backdrop-filter: blur(2px); }
   .page-main {
-    background: linear-gradient(to left, rgba(22, 34, 42, 0.7), rgba(58, 96, 115, 0.7)), url(../img/6.jpg);
-    backdrop-filter: blur(2px); }
+    background: linear-gradient(to left, rgba(22, 34, 42, 0.7), rgba(58, 96, 115, 0.7)), url(../img/6.jpg); }
+  .page-forgot--signup {
+    background: linear-gradient(to left, rgba(22, 34, 42, 0.7), rgba(58, 96, 115, 0.7)), url(../img/1.jpg) no-repeat; }
 
 /* uniti css */
