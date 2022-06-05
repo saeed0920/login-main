@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>main</title>
+  </head>
+  <body class="page page-main">
+    <ui-view class="container-setup">
+      <div class="container-login group">
+        <img
+          src="../img/logo2.png"
+          alt="logo"
+          class="container-login__header"
+        />
+        <img src="../img/flag.png" alt="" class="cntainer-login__img" />
+        <h1 class="container-login__h1">
+          پیشخوان خدمات سازمان وزارت آموزش و پرورش
+        </h1>
+        <input
+          type="text"
+          required
+          class="container-login__input margin-top-2"
+          placeholder="نام کاربری"
+        />
+
+        <input
+          type="password"
+          required
+          class="container-login__input margin-top-2"
+          placeholder="رمز عبور"
+        />
+        <div class="container-login__box">
+          <a href="#">ثبت نام</a>
+          <a href="#">رمزعبورخودرافراموش کرده اید؟</a>
+        </div>
+        <button class="container-login__btn">ورود</button>
+      </div>
+    </ui-view>
+    <footer class="footer">
+      کلیه حقوق مادی و معنوی سامانه متعلق به وزارت آموزش و پرورش می باشد
+    </footer>
+  </body>
+</html>

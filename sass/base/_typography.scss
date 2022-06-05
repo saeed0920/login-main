@@ -6,7 +6,7 @@
   background: rgba(28, 47, 95, 0.66);
   border-radius: 1rem;
   backdrop-filter: blur(5px);
-  box-shadow: 0 2rem 1rem rgba($color--black, 0.2);
+  box-shadow: 0 0 10px #cce9f4;
   border: 3px solid rgb(204, 233, 244);
   @include res(500) {
     width: 40rem;
@@ -53,14 +53,14 @@
     width: 15rem;
     top: 10rem;
     left: -6rem;
-    background-image: url(../../img/_Group2_.png);
+    background-image: url(../img/_Group2_.png);
   }
   &::before {
     top: 5rem;
     right: -8rem;
     height: 20rem;
     width: 20rem;
-    background-image: url(../../img/_Group_.png);
+    background-image: url(../img/_Group_.png);
   }
 }
 .container-login {
