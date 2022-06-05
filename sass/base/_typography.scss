@@ -1,0 +1,118 @@
+// global class
+.container-setup {
+  height: min(70rem, 100rem);
+  width: min(50rem, 80rem);
+  place-self: center;
+  background: linear-gradient(to right, rgba(#2c3e50, 0.8), rgba(#4ca1af, 0.6));
+  border-radius: 1rem;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2rem 1rem rgba($color--black, 0.2);
+}
+
+.footer {
+  background-color: rgba($color--2, 0.6);
+  height: 4rem;
+  padding: 1rem 0;
+  text-align: center;
+  place-self: flex-end stretch;
+
+  font-size: 1.5rem;
+  font-family: $font--header;
+}
+
+// class' for container login
+
+.container-login {
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  justify-content: space-around;
+  &__header {
+    width: 15rem;
+    height: 15rem;
+  }
+  &__h1 {
+    font-size: 2rem;
+    font-family: $font--header;
+    color: $color--white;
+  }
+  &__input {
+    font-size: 2rem;
+    font-family: $font--text;
+    color: $color--gray-text;
+    padding: 1rem 4rem;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-bottom: 3px solid transparent;
+
+    display: block;
+    transition: all 0.2s;
+    &::-webkit-input-placeholder {
+      color: $color--gray-text;
+    }
+    &:focus,
+    &:focus-visible {
+      outline: none;
+
+      box-shadow: 0 1rem 2rem rgba($color--black, 0.1);
+      border-bottom: 3px solid green;
+    }
+    &:focus:invalid {
+      border-bottom: 3px solid red;
+    }
+  }
+  &__box {
+    width: 52%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & a {
+      &,
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color--gray-light;
+        font-size: 1.5rem;
+        font-family: $font--text;
+        transition: all 0.2s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+  &__btn {
+    background-color: $color--2;
+    color: $color--white;
+    cursor: pointer;
+    height: 6rem;
+    border: none;
+    border-radius: 9rem;
+    width: 18rem;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.15);
+    font-size: 3rem;
+    font-family: $font--text;
+    backface-visibility: hidden;
+    &:visited,
+    &:link {
+      display: inline-block;
+      padding: 3px;
+      transition: all 0.2s;
+    }
+    &:hover {
+      box-shadow: 0 0.5rem 1rem rgba(black, 0.3);
+      transform: translateY(-3px);
+    }
+    &:active {
+      box-shadow: 0 0.2rem 0.3rem rgba(black, 0.4);
+      transform: translateY(-1px);
+    }
+  }
+}

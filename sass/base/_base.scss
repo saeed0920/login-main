@@ -37,3 +37,20 @@ body {
 
 ::selection {
 }
+
+// pages
+.page {
+  display: grid;
+  min-height: 100vh;
+  background-size: cover;
+  direction: rtl;
+  &-main {
+    background: linear-gradient(
+        to left,
+        rgba($color--1, 0.7),
+        rgba($color--1-2, 0.7)
+      ),
+      url(../img/6.jpg);
+    backdrop-filter: blur(2px);
+  }
+}
