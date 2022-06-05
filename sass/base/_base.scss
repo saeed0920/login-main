@@ -54,6 +54,7 @@ body {
   backdrop-filter: blur(2px);
 
   &-main {
+    animation: move 0.5s ease-out;
     background: linear-gradient(
         to left,
         rgba(#1c2f5fa8, 0.7),

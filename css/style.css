@@ -7,6 +7,14 @@
     opacity: 1;
     transform: translatex(0); } }
 
+@keyframes move {
+  0% {
+    transform: translateX(15rem);
+    opacity: 0; }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+
 /*
 
 0px - 600px       = phone only
@@ -228,6 +236,7 @@ body {
   direction: rtl;
   backdrop-filter: blur(2px); }
   .page-main {
+    animation: move 0.5s ease-out;
     background: linear-gradient(to left, rgba(28, 47, 95, 0.7), rgba(28, 47, 95, 0.7)), url(../img/6.jpg) no-repeat; }
   .page-forgot--signup {
     background: linear-gradient(to left, rgba(22, 34, 42, 0.7), rgba(58, 96, 115, 0.7)), url(../img/1.jpg) no-repeat; }
