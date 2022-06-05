@@ -239,7 +239,7 @@ body {
   direction: rtl;
   backdrop-filter: blur(2px);
   background: linear-gradient(to left, rgba(28, 47, 95, 0.7), rgba(28, 47, 95, 0.7)), url(../img/6.jpg) no-repeat; }
-  .page-main {
+  .page-main .container-setup {
     animation: move 0.5s ease-out; }
 
 /* uniti css */

@@ -63,7 +63,9 @@ body {
     ),
     url(../img/6.jpg) no-repeat;
   &-main {
-    animation: move 0.5s ease-out;
+    & .container-setup {
+      animation: move 0.5s ease-out;
+    }
   }
 
   &-forgot--signup {
