@@ -104,6 +104,11 @@ big-desktop
       @content;
     }
   }
+  @if $res == height-650 {
+    @media only screen and (max-height: 40.625em) {
+      @content;
+    }
+  }
   @if $res == 650 {
     @media only screen and (max-width: 40.625em) {
       @content;

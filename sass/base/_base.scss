@@ -28,6 +28,9 @@
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+  @include res(height-650) {
+    font-size: 55%;
+  }
   @include res(500) {
     font-size: 58%;
   }
