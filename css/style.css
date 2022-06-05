@@ -30,30 +30,37 @@ big-desktop
 */
 /* animation */
 .container-setup {
-  height: 70rem;
-  width: 50rem;
+  height: 60rem;
+  width: 40rem;
   place-self: center;
-  background: linear-gradient(to right, rgba(44, 62, 80, 0.8), rgba(76, 161, 175, 0.6));
+  background: linear-gradient(to right, rgba(44, 62, 80, 0.8), rgba(22, 34, 42, 0.5));
   border-radius: 1rem;
   backdrop-filter: blur(5px);
   box-shadow: 0 2rem 1rem rgba(0, 0, 0, 0.2); }
+  @media only screen and (max-width: 25.625em) {
+    .container-setup {
+      height: 55rem;
+      width: 35rem; } }
 
 .footer {
   background-color: rgba(31, 162, 255, 0.6);
-  height: 4rem;
-  padding: 1rem 0;
+  height: 2rem;
   text-align: center;
   place-self: flex-end stretch;
+  color: #ffffff;
   font-size: 1.5rem;
   font-family: font-header; }
 
 .container-login {
-  padding: 2rem 1rem;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 90%;
+  height: 100%;
   justify-content: space-around; }
+  @media only screen and (max-width: 25.625em) {
+    .container-login {
+      padding: 0.5rem; } }
   .container-login__header {
     width: 15rem;
     height: 15rem; }
@@ -72,6 +79,10 @@ big-desktop
     border-bottom: 3px solid transparent;
     display: block;
     transition: all 0.2s; }
+    @media only screen and (max-width: 25.625em) {
+      .container-login__input {
+        padding: 0.8rem 2.5rem;
+        font-size: 1.5rem; } }
     .container-login__input::-webkit-input-placeholder {
       color: #63666f; }
     .container-login__input:focus, .container-login__input:focus-visible {
@@ -81,7 +92,7 @@ big-desktop
     .container-login__input:focus:invalid {
       border-bottom: 3px solid red; }
   .container-login__box {
-    width: 52%;
+    width: 60%;
     display: flex;
     align-items: center;
     justify-content: space-between; }
@@ -108,6 +119,10 @@ big-desktop
     font-size: 3rem;
     font-family: font-text;
     backface-visibility: hidden; }
+    @media only screen and (max-width: 25.625em) {
+      .container-login__btn {
+        height: 5rem;
+        width: 15rem; } }
     .container-login__btn:visited, .container-login__btn:link {
       display: inline-block;
       padding: 3px;
@@ -149,6 +164,12 @@ big-desktop
 html {
   font-size: 62.5%;
   box-sizing: border-box; }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 58%; } }
+  @media only screen and (max-width: 22.5em) {
+    html {
+      font-size: 55%; } }
 
 body {
   font-family: sans-serif;
