@@ -56,10 +56,10 @@ body {
   &-main {
     background: linear-gradient(
         to left,
-        rgba($color--1, 0.7),
-        rgba($color--1-2, 0.7)
+        rgba(#1c2f5fa8, 0.7),
+        rgba(#1c2f5fa8, 0.7)
       ),
-      url(../img/6.jpg);
+      url(../img/6.jpg) no-repeat;
   }
 
   &-forgot--signup {

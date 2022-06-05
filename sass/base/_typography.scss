@@ -1,16 +1,16 @@
 // global class
 .container-setup {
   height: 60rem;
-  width: 40rem;
+  width: 50rem;
   place-self: center;
-  background: linear-gradient(
-    to right,
-    rgba(#2c3e50, 0.8),
-    rgba($color--1, 0.5)
-  );
+  background: rgba(28, 47, 95, 0.66);
   border-radius: 1rem;
   backdrop-filter: blur(5px);
   box-shadow: 0 2rem 1rem rgba($color--black, 0.2);
+  border: 3px solid rgb(204, 233, 244);
+  @include res(500) {
+    width: 40rem;
+  }
 
   @include res(410) {
     height: 55rem;
@@ -32,7 +32,37 @@
 }
 
 // class' for container login
+.group {
+  position: relative;
+  &::after,
+  &::before {
+    content: "";
+    width: 25rem;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 10;
+    background-size: 100%;
 
+    @include res(650) {
+      display: none;
+    }
+  }
+
+  &::after {
+    height: 20rem;
+    width: 15rem;
+    top: 10rem;
+    left: -6rem;
+    background-image: url(../../img/_Group2_.png);
+  }
+  &::before {
+    top: 5rem;
+    right: -8rem;
+    height: 20rem;
+    width: 20rem;
+    background-image: url(../../img/_Group_.png);
+  }
+}
 .container-login {
   padding: 1rem;
   display: flex;
@@ -59,13 +89,15 @@
     color: $color--gray-text;
     padding: 1rem 4rem;
     border: none;
-    border-radius: 2px;
-    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 2.5rem;
+    background-color: $color--white;
     border-bottom: 3px solid transparent;
-
+    width: 90%;
     display: block;
     transition: all 0.2s;
-
+    @include res(500) {
+      width: 70%;
+    }
     @include res(410) {
       padding: 0.8rem 2.5rem;
       font-size: 1.5rem;
@@ -85,7 +117,7 @@
     }
   }
   &__box {
-    width: 60%;
+    width: 85%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -106,7 +138,7 @@
     }
   }
   &__btn {
-    background-color: $color--2;
+    background-color: $color--green;
     color: $color--white;
     cursor: pointer;
     height: 6rem;
