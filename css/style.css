@@ -234,11 +234,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   direction: rtl;
-  backdrop-filter: blur(2px); }
+  backdrop-filter: blur(2px);
+  background: linear-gradient(to left, rgba(28, 47, 95, 0.7), rgba(28, 47, 95, 0.7)), url(../img/6.jpg) no-repeat; }
   .page-main {
-    animation: move 0.5s ease-out;
-    background: linear-gradient(to left, rgba(28, 47, 95, 0.7), rgba(28, 47, 95, 0.7)), url(../img/6.jpg) no-repeat; }
-  .page-forgot--signup {
-    background: linear-gradient(to left, rgba(22, 34, 42, 0.7), rgba(58, 96, 115, 0.7)), url(../img/1.jpg) no-repeat; }
+    animation: move 0.5s ease-out; }
 
 /* uniti css */
+.margin-top-negative {
+  margin-top: -15rem; }

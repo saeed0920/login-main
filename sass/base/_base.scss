@@ -53,22 +53,16 @@ body {
   direction: rtl;
   backdrop-filter: blur(2px);
 
+  background: linear-gradient(
+      to left,
+      rgba(#1c2f5fa8, 0.7),
+      rgba(#1c2f5fa8, 0.7)
+    ),
+    url(../img/6.jpg) no-repeat;
   &-main {
     animation: move 0.5s ease-out;
-    background: linear-gradient(
-        to left,
-        rgba(#1c2f5fa8, 0.7),
-        rgba(#1c2f5fa8, 0.7)
-      ),
-      url(../img/6.jpg) no-repeat;
   }
 
   &-forgot--signup {
-    background: linear-gradient(
-        to left,
-        rgba($color--1, 0.7),
-        rgba($color--1-2, 0.7)
-      ),
-      url(../img/1.jpg) no-repeat;
   }
 }
